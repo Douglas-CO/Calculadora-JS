@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Dia 1 - Calculadora</title>
+</head>
+<body>
+    <div class="card card-body" style="margin: 1cm;">
+        <div class="card bg-primary" style="position: absolute; top: 0; left: 0; width: 100%; height: 2cm;">
+            <h1 style="font-family: 'Times New Roman', Times, serif; text-align: center;">CALCULADORA</h1>
+        </div>
+        <div style="margin-top: 2cm;">
+            <h3>Suma</h3>
+            <input type="number" id="numeroUnoSuma" placeholder="Primer Numero:"> 
+            <input type="number" id="numeroDosSuma" placeholder="Segundo Numero:"> 
+            <button type="button" class="btn btn-success" onclick="sumatoria()">Sumar</button> 
+            <div id="respuestaSuma" style="position:absolute; top: 3cm; right: 2cm; width: 12cm; height: 2cm; border: 1px solid black;"></div> 
+
+            <h3>Resta</h3>
+            <input type="number" id="numeroUnoResta" placeholder="Primer Numero:"> 
+            <input type="number" id="numeroDosResta" placeholder="Segundo Numero:"> 
+            <button type="button" class="btn btn-success" onclick="restar()">Restar</button> 
+            <div id="respuestaResta" style="position:absolute; top: 5cm; right: 2cm; width: 12cm; height: 2cm; border: 1px solid black;"></div>
+
+            <h3>Multiplicacion</h3>
+            <input type="number" id="numeroUnoMulti" placeholder="Primer Numero:"> 
+            <input type="number" id="numeroDosMulti" placeholder="Segundo Numero:"> 
+            <button type="button" class="btn btn-success" onclick="multiplicar()">Multiplicar</button>
+            <div id="respuestaMultipliacion" style="position:absolute; top: 7cm; right: 2cm; width: 12cm; height: 2cm; border: 1px solid black;"></div>
+            
+            <h3>Division</h3>
+            <input type="number" id="numeroUnoDivi" placeholder="Primer Numero:"> 
+
+            <input type="number" id="numeroDosDivi" placeholder="Segundo Numero:"> 
+            <button type="button" class="btn btn-success" onclick="dividir()">Dividir</button>
+            <div id="respuestaDividir" style="position:absolute; top: 9cm; right: 2cm; width: 12cm; height: 2cm; border: 1px solid black;"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
